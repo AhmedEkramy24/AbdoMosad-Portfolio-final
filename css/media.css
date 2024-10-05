@@ -1,0 +1,114 @@
+/* small */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+/* mediam */
+
+@media (min-width: 768px) {
+  .container {
+    width: 730px;
+  }
+}
+/* large */
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+/* xl */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* xxl */
+@media (min-width: 1400px) {
+  .container {
+    width: 1360px;
+  }
+}
+
+/* header */
+
+@media (max-width: 770px) {
+  .header .container > i {
+    display: block;
+  }
+  .header .container nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+  .header .container nav ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .header .container nav ul li {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 150px;
+    border-bottom: black solid 1px;
+  }
+  .header .container nav ul li a:hover {
+    padding-left: 15px;
+  }
+
+  /* portfolio */
+  .portfolio .container {
+    flex-direction: column;
+  }
+  .portfolio .container .content {
+    width: 100%;
+  }
+
+  .portfolio .container .content h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolio .container .img {
+    width: 300px;
+    height: 300px;
+  }
+  .portfolio .container {
+    justify-content: space-between;
+  }
+
+  /* courses */
+
+  .courses .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .courses .container div {
+    width: 100%;
+  }
+
+  /* skills */
+
+  .skills .container {
+    flex-direction: column;
+  }
+  /* contact */
+  .contact .container {
+    flex-direction: column;
+  }
+
+  .contact .container p {
+    margin-bottom: 50px;
+  }
+}
